@@ -12,8 +12,7 @@ Après chaque proposition, le programme indique à l'utilisateur la correspondan
 - X valeur sont corrects et bien placé
 - Toutes les valeurs sont corrects et bien placées 🎉
 
-Si toutes les valeurs sont trouvées, le jeu s'arrête et le score du joueur est indiqué.
-Si les valeurs ne sont pas trouvées après les 12 essais, celui-ci a perdu et le programme affiche l'ensemble de valeur qui était attendu.
+Si toutes les valeurs sont trouvées, le jeu s'arrête et le score du joueur est indiqué. Si les valeurs ne sont pas trouvées après les 12 essais, celui-ci a perdu et le programme affiche l'ensemble de valeur qui était attendu.
 
 ## Bonus
 Ajouter des modes de difficulté : 
