@@ -1,4 +1,4 @@
-﻿
+
 using Exo_RecapBase_Mastermind.Models;
 using System.Text.RegularExpressions;
 
@@ -17,7 +17,7 @@ while (game.State == MastermindState.Running)
     string input;
     do
     {
-        Console.Write("> ");
+        Console.Write($"Essai {game.CurrentTry + 1} > ");
         input = Console.ReadLine()! ;
     }
     while (!Regex.IsMatch(input, "^[0-9] [0-9] [0-9] [0-9]$"));
