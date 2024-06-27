@@ -61,6 +61,16 @@ namespace Exo_RecapBase_Mastermind.Models
             CurrentTry++;
 
             MastermindResult result = Compare(UserValue);
+
+            if(result.WellPlaced == NbElement)
+            {
+                State = MastermindState.Win;
+            }
+            else if (CurrentTry == NbMaxTry)
+            {
+                State = MastermindState.Loose;
+            }
+
             return result;
         }
 
