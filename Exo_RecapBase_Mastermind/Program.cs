@@ -1,10 +1,9 @@
-
-using Exo_RecapBase_Mastermind.Models;
+﻿using Exo_RecapBase_Mastermind.Models;
 using System.Text.RegularExpressions;
 
 Mastermind game = new Mastermind();
 game.Initialize();
-Console.WriteLine($"DEBUG {string.Join(" > ", game.MysteryValue!)}");
+//Console.WriteLine($"DEBUG {string.Join(" > ", game.MysteryValue!)}");
 
 Console.WriteLine("Jeu du Mastermind...");
 Console.WriteLine("********************");
@@ -31,6 +30,7 @@ while (game.State == MastermindState.Running)
     MastermindResult result = game.Play(userTry);
     Console.WriteLine($"Valeur bien placé : {result.WellPlaced}");
     Console.WriteLine($"Valeur mal placé : {result.WrongPlaced}");
+    Console.WriteLine();
 }
 
 if(game.State == MastermindState.Win)
